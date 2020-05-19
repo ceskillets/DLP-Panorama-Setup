@@ -5,6 +5,8 @@
 
 #  roles:
 #    - role: PaloAltoNetworks.paloaltonetworks
+  collections:
+    - paloaltonetworks.panos
 
   tasks:
     - name: Debug Provider Info
