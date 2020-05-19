@@ -20,10 +20,10 @@ labels:
 # ---------------------------------------------------------------------
 # end of preamble section
 variables:
-  - name: cloud_service_plugin
-    description: cloud services plugin version
-    default:
-    type_hint: disabled
+#  - name: cloud_service_plugin
+#    description: cloud services plugin version
+#    default:
+#    type_hint: disabled
 
 # snippets section
 # ---------------------------------------------------------------------
@@ -37,9 +37,10 @@ snippets:
 #      - name: plugin_version
 #        capture_value: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/@version
     outputs:
-      - name: cloud_service_plugin_o
-#        capture_value: result/system/plugin_versions/entry[@name='cloud_services']/@version
-        capture_object: .
+      - name: cloud_service_plugin
+        capture_value: ./plugin_versions/entry[@name='cloud_services']/@version
+#      - name: cloud_service_plugin_object
+#        capture_object: .
 
   - name: check_version
     label: Check plugin version
