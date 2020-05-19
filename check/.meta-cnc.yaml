@@ -43,7 +43,7 @@ snippets:
     fail_message: |
       Cloud Services Plugin version {{ cloud_service_plugin }} fails requirement (1.6.0 or greater) plugin_version {{ plugin_version }}
     pass_message: |
-      Cloud Services Plugin version {{ cloud_service_plugin }} meets requirement (1.6.0 or greater) plugin_version {{ plugin_versoin }}
+      Cloud Services Plugin version {{ cloud_service_plugin }} meets requirement (1.6.0 or greater) plugin_version {{ plugin_version }}
 
 # Check for DLP Service Provisioning or request if not found
 
