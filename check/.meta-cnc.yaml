@@ -64,7 +64,11 @@ snippets:
   - name: dlp_service
     label: Test for connection to DLP Service
     when: cloud_service_plugin >= '1.6.0'
-    test: dlp_service_status == 'DLP Provisioning Successful'
+    test: |
+      (
+      dlp_service_status == 'DLP Provisioning Successful' or
+      dlp_service_status == 'Enterprise DLP has been activated'
+      )
     fail_message: |
       {{ dlp_service_status }}
     pass_message: |
