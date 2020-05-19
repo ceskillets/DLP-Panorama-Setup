@@ -38,7 +38,7 @@ snippets:
 
   - name: check_version
     label: Check plugin version
-    test: cloud_service_plugin >= '1.6'
+    test: cloud_service_plugin >= 1.6.0
     documentation_link: https://docs.paloaltonetworks.com/prisma/prisma-access/prisma-access-panorama-release-notes/prisma-access-about/upgrade-cloud-services-plugin
     fail_message: |
       Cloud Services Plugin version {{ cloud_service_plugin }} fails requirement (1.6.0 or greater)
