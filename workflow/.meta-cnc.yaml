@@ -41,7 +41,7 @@ variables:
 snippets:
   - name: get_cloud_services_plugin_version
   - name: DLP-Verify-Panorama
-  - name: DLP-Panorama-Install
+  - name: d:lp-install-cloud-services-plugin
     when: cloud_service_plugin < '1.6.0'
   - name: DLP-Verify-Panorama
     when: cloud_service_plugin < '1.6.0'
