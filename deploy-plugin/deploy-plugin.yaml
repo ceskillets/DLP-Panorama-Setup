@@ -9,8 +9,8 @@
     - paloaltonetworks.panos
 
   tasks:
-    - name: Debug Provider Info
-      debug: msg='{{ provider }}'
+#    - name: Debug Provider Info
+#      debug: msg='{{ provider }}'
 
 
     # borrowed from https://github.com/mrichardson03/ansible-pan-samples/blob/master/upgrade_content.yml
