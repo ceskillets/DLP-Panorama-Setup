@@ -67,7 +67,7 @@ snippets:
     test: |
       (
       dlp_service_status == 'DLP Provisioning Successful' or
-      dlp_service_status == 'Enterprise DLP has been activated'
+      dlp_service_status == 'Enterprise DLP has been activated.'
       )
     fail_message: |
       {{ dlp_service_status }}
